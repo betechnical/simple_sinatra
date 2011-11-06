@@ -4,6 +4,6 @@ get "/" do
     "this is the best"
 end
 
-get "/fun" do
-  "ruby class/fun"
+get "/fun/:fun_thing" do
+  "#{params[:fun_thing]} is fun"
 end
