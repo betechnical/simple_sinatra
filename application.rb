@@ -5,5 +5,9 @@ get "/" do
 end
 
 get "/fun/:fun_thing" do
-  "#{params[:fun_thing]} is fun"
+  if params[:fun_thing] == "cats"
+    "#{params[:fun_thing]} are fun"
+  else
+    "#{params[:fun_thing]} is fun"
+  end   
 end
